@@ -252,6 +252,10 @@ a:hover {
   color: var(--text);
 }
 
+.edu-card p + p {
+  margin-top: 6px;
+}
+
 /* Footer */
 .footer {
   padding: 28px 0;
