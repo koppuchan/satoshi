@@ -2,16 +2,328 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Satoshi Fukushima — Senior FullStack Engineer</title>
     <meta
       name="description"
       content="Portfolio of Satoshi Fukushima, a Tokyo-based senior fullstack engineer specializing in web, mobile, blockchain, and AI/computer vision projects."
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <header class="hero">
+      <div class="container hero-inner">
+        <div class="avatar" aria-hidden="true">SF</div>
+        <h1>Satoshi Fukushima</h1>
+        <p class="role">Senior FullStack Engineer</p>
+        <p class="location">Tokyo, Japan</p>
+        <div class="hero-links">
+          <a href="mailto:satoshifukushima96@outlook.com">satoshifukushima96@outlook.com</a>
+          <a href="https://github.com/koppuchan" target="_blank" rel="noreferrer">github.com/koppuchan</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="about">
+        <div class="container">
+          <h2>About</h2>
+          <p class="about-text">
+            I'm a software engineer based in Tokyo with about 8 years of experience, mostly building web
+            applications and mobile apps, though I've also worked on blockchain projects and some AI/computer
+            vision work earlier in my career.
+          </p>
+          <p class="about-text">
+            My background is pretty varied — I've built everything from a robot navigation system using
+            TensorFlow and OpenCV, to crypto wallets, social apps, fitness platforms, and more recently
+            e-commerce and business tools. I tend to get involved across the full stack and usually stay on a
+            project through testing and maintenance, not just the initial build.
+          </p>
+          <p class="about-text">
+            I studied computer science at Tokyo University of Science and have been working professionally
+            since early 2018. I'm comfortable jumping into unfamiliar domains and figuring things out as I go.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="container">
+          <h2>Experience</h2>
+          <div class="timeline">
+            <div class="job">
+              <div class="job-header">
+                <div>
+                  <h3>Senior FullStack Engineer</h3>
+                  <p class="job-company">Freelancer · Tokyo, Japan</p>
+                </div>
+                <span class="job-period">2024 — Present</span>
+              </div>
+              <p class="job-summary">
+                Most of my recent work has been contract-based, building web apps across a range of industries.
+              </p>
+              <div class="projects">
+                <div class="project">
+                  <h4>DXBuild</h4>
+                  <p>
+                    A construction management platform handling everything from estimates and ordering through
+                    to billing and profit tracking. Revamped the core management features, including daily cost
+                    reporting and per-project margin visibility.
+                  </p>
+                  <div class="tags">
+                    <span class="tag">Angular</span>
+                    <span class="tag">Express.js</span>
+                    <span class="tag">MongoDB</span>
+                    <span class="tag">AWS Amplify</span>
+                  </div>
+                </div>
+                <div class="project">
+                  <h4>Brain</h4>
+                  <p>
+                    An online marketplace where writers sell article content directly to readers. Handled
+                    payment integration, access control so only paying users can view content, and basic
+                    recommendation logic for repeat purchases.
+                  </p>
+                  <div class="tags">
+                    <span class="tag">Nuxt 3</span>
+                    <span class="tag">Ruby on Rails</span>
+                    <span class="tag">MySQL</span>
+                  </div>
+                </div>
+                <div class="project">
+                  <h4>Gacha System</h4>
+                  <p>
+                    An online gacha system where users spin for randomized items, with configurable rarity
+                    tiers and event-specific settings. Covered development through ongoing maintenance and
+                    integrated Stripe for payments.
+                  </p>
+                  <div class="tags">
+                    <span class="tag">Next.js</span>
+                    <span class="tag">Express.js</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">AWS EC2</span>
+                  </div>
+                </div>
+                <div class="project">
+                  <h4>Mign</h4>
+                  <p>
+                    A business productivity app built from requirements gathering through deployment, with
+                    multi-device support (phones, tablets, desktop) as a core requirement. Stayed in regular
+                    contact with the client post-launch to refine based on real usage.
+                  </p>
+                  <div class="tags">
+                    <span class="tag">Django</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">AWS EC2</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="job">
+              <div class="job-header">
+                <div>
+                  <h3>Senior FullStack Engineer &amp; Blockchain Developer</h3>
+                  <p class="job-company">Servichain Co., Ltd. · Denmark</p>
+                </div>
+                <span class="job-period">Jan 2021 — Dec 2023</span>
+              </div>
+              <p class="job-summary">
+                Worked on a mix of blockchain products and consumer apps, often as team lead.
+              </p>
+              <div class="projects">
+                <div class="project">
+                  <h4>Cauris</h4>
+                  <p>
+                    A blockchain wallet handling both cryptocurrency and fiat currency, designed to be usable by
+                    people without a technical background. Led a five-person team on this for nearly three
+                    years.
+                  </p>
+                  <div class="tags">
+                    <span class="tag">React.js</span>
+                    <span class="tag">React Native</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">Go</span>
+                    <span class="tag">MongoDB</span>
+                    <span class="tag">PostgreSQL</span>
+                  </div>
+                </div>
+                <div class="project">
+                  <h4>Klubby</h4>
+                  <p>
+                    A Web3 chat app where crypto communities are gated by token ownership. Technically
+                    interesting for its AWS serverless architecture and real-time requirements — put a lot of
+                    effort into test design given the cost of production bugs in a financial app.
+                  </p>
+                  <div class="tags">
+                    <span class="tag">AWS CDK</span>
+                    <span class="tag">Lambda</span>
+                    <span class="tag">React.js</span>
+                    <span class="tag">Ionic</span>
+                    <span class="tag">DynamoDB</span>
+                  </div>
+                </div>
+                <div class="project">
+                  <h4>NOVA</h4>
+                  <p>
+                    A social media app aiming for something simpler than Instagram or Twitter — just sharing
+                    with friends, no algorithmic feed, no clutter. Led a six-person team.
+                  </p>
+                  <div class="tags">
+                    <span class="tag">React.js</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">Firebase</span>
+                    <span class="tag">Apollo</span>
+                    <span class="tag">Ionic</span>
+                  </div>
+                </div>
+                <div class="project">
+                  <h4>Smaller projects</h4>
+                  <p>
+                    A Flutter-based dating app with Twilio SMS verification, a 360° video sharing platform with
+                    VR device support, and Stronger — a camera-based livestream fitness app where users compete
+                    in real-time challenges.
+                  </p>
+                  <div class="tags">
+                    <span class="tag">Flutter</span>
+                    <span class="tag">Twilio</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="job">
+              <div class="job-header">
+                <div>
+                  <h3>Senior FullStack Engineer &amp; AI Engineer</h3>
+                  <p class="job-company">Social Robotics Co., Ltd. · Tokyo, Japan</p>
+                </div>
+                <span class="job-period">Jan 2018 — Dec 2020</span>
+              </div>
+              <p class="job-summary">
+                My first job after university, and the work was quite different from anything I'd done before.
+              </p>
+              <div class="projects">
+                <div class="project">
+                  <h4>Robot Autonomous Navigation</h4>
+                  <p>
+                    The robot uses its onboard camera to figure out where it is and how to get where it needs to
+                    go. Built the image processing pipeline and path-calculation algorithms — my first real
+                    exposure to computer vision and machine learning at production scale. Led a team of around
+                    20.
+                  </p>
+                  <div class="tags">
+                    <span class="tag">OpenCV</span>
+                    <span class="tag">TensorFlow</span>
+                    <span class="tag">C++</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">AWS</span>
+                  </div>
+                </div>
+                <div class="project">
+                  <h4>International Payments Platform</h4>
+                  <p>
+                    A large financial platform processing international payments in over 150 currencies, with
+                    about 100 people involved in total — good experience navigating a much larger team and
+                    codebase.
+                  </p>
+                  <div class="tags">
+                    <span class="tag">React.js</span>
+                    <span class="tag">Vue.js</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Go</span>
+                    <span class="tag">MongoDB</span>
+                    <span class="tag">PostgreSQL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container">
+          <h2>Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-group">
+              <h4>Languages</h4>
+              <div class="tags">
+                <span class="tag">JavaScript / TypeScript</span>
+                <span class="tag">Python</span>
+                <span class="tag">Go</span>
+                <span class="tag">C++</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h4>Frontend</h4>
+              <div class="tags">
+                <span class="tag">React.js</span>
+                <span class="tag">React Native</span>
+                <span class="tag">Next.js</span>
+                <span class="tag">Vue.js</span>
+                <span class="tag">Nuxt 3</span>
+                <span class="tag">Angular</span>
+                <span class="tag">Ionic</span>
+                <span class="tag">Flutter</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h4>Backend</h4>
+              <div class="tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">Express.js</span>
+                <span class="tag">Ruby on Rails</span>
+                <span class="tag">Django</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h4>Data</h4>
+              <div class="tags">
+                <span class="tag">MongoDB</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">DynamoDB</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h4>Cloud &amp; Infra</h4>
+              <div class="tags">
+                <span class="tag">AWS EC2</span>
+                <span class="tag">AWS Lambda</span>
+                <span class="tag">AWS CDK</span>
+                <span class="tag">AWS Amplify</span>
+                <span class="tag">Firebase</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h4>AI / Computer Vision</h4>
+              <div class="tags">
+                <span class="tag">TensorFlow</span>
+                <span class="tag">OpenCV</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="education">
+        <div class="container">
+          <h2>Education</h2>
+          <div class="edu-card">
+            <h3>Tokyo University of Science</h3>
+            <p>B.S. Computer Science · March 2017</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>Satoshi Fukushima · <a href="mailto:satoshifukushima96@outlook.com">satoshifukushima96@outlook.com</a></p>
+      </div>
+    </footer>
   </body>
 </html>
